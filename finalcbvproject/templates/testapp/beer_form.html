@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+  <h1>Add New Beer Here/Update Existing Beer Here</h1>
+  <form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary" name="" value="Insert/Update Record">
+  </form>
+{% endblock %}
+
+<!-- after inserting whwre you should go ? inside models.py -->
