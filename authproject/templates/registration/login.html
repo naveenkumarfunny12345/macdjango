@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<br><br><br>
+
+  <div class="container" align='center'>
+    <h1>Please login to write exams...</h1>
+    <!-- action not required,this one going to take care by auth application view function -->
+    <!-- who is responsible to show this -->
+        <!-- am i written any forms.py? auth application -->
+    <form method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="" value="Login">
+      <!-- can you plss display the form to the end user -->
+      <!-- after given user name and pswd, request goes to same view function from the auth application-->
+      <!-- if the user is valid ,it goes to java page  otherwise ERROR -->
+    </form>
+
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <link rel="stylesheet" href="{%static "css/auth123.css"%}">
+  </head>
+  <body>
+    <nav class='navbar navbar-expand-lg navbar-light bg-dark'>
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">DURGAEXAMS</a>
+           </div>
+       <ul class='nav navbar-nav'>
+         <li> <a href="/java">Java Exams</a> </li>
+         <li> <a href="/python">Python Exams</a> </li><br>
+         <li> <a href="/aptitude">Aptitude Exams</a> </li><br>
+         </ul>
+         <ul class='nav navbar-nav navbar-right'>
+           <li> <a href="/signup">Signup</a> </li>
+           <li> <a href="/accounts/login/">Login</a> </li>
+            <li> <a href="/accounts/logout/">Logout</a> </li>
+            </ul>
+             </div>
+            </nav>
+            {% block body_block %}
+            {% endblock %}
+            </body>
+             </html>
+
+
+  </body>
+</html>
