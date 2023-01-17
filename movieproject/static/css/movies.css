@@ -1,0 +1,44 @@
+body{
+  background: url(https://media.istockphoto.com/id/1340577488/photo/girl-enjoying-watching-a-nice-movie-at-the-cinema.jpg?b=1&s=170667a&w=0&k=20&c=nTxetqtXrl-mlOgG6Fgtpgd_8JbogYRp5F2TXZNmkkE=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.container .jumbotron{
+  margin-top: 20px;
+  background: red;
+  color: white;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+table{
+  color: yellow;
+  align-items: center;
+}
+
+#nowmovie{
+  color: yellow;
+  text-align: center;
+}
+
+h1{
+  color: yellow;
+  text-align: center;
+}
+
+form{
+  border:10px solid red;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+table{
+  border: 2px solid yellow;
+  margin: auto;
+  font-size: 30px;
+}
+
+th{
+  background: red;
+  color: yellow;
+}

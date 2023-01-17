@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> --> -->
+    <link rel="stylesheet" href="{% static "css/movies.css"%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" align='center'>
+      <div class="jumbotron">
+        <h1>MY LOVE LAMUNA FILMS</h1>
+        <p>Up to date Movies Information</p><hr>
+        <a class="btn btn-primary btn-lg" href="/addmovie" role="button">Add Movie</a>
+        &nbsp;&nbsp;
+        <a class="btn btn-primary btn-lg" href="/listmovies" role="button">list Movie</a>
+      </div>
+    </div>
+  </body>
+</html>
