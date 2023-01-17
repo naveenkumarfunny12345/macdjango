@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block %}
+  <h1>{{company.name}} Information</h1>
+  <ol>
+    <h2><li>Company Name:{{company.name}}</li></h2>
+    <h2><li>Company Location:{{company.location}}</li></h2>
+    <h2><li>Company ceo:{{company.ceo}}</li></h2>
+  </ol>
+  <h1>Do you want to update the record?</h1>
+  <a class="btn btn-warning" href="/update/{{company.id}}">Update Record</a>
+    <!-- all the tym nee 127/0/.3.3/update/1 kuduthutu erupiya ? user niyabagam vechukanuma solu? -->
+  <a class="btn btn-danger" href="/delete/{{company.id}}">Delete Record</a>
+  <a class="btn btn-warning" href="/">Companies List</a>
+
+{% endblock %}
+
+
+<!-- if you want to delete all the records based on some condition..fbv will help -->

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block %}
+  <h1>List of all companies</h1>
+  <ol>
+    {% for company in company_list %}
+    <li><a href="/{{company.id}}">{{company.name}}</a></li>
+    {% endfor %}
+  </ol>
+  <a class="btn btn-success" href="/create">Insert New Company</a>
+  <!-- all the tym nee 127/0/.3.3/create kuduthutu erupiya ? user niyabagam vechukanuma solu? -->
+{% endblock %}
